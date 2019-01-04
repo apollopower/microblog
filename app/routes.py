@@ -5,7 +5,7 @@ from datetime import datetime
 
 from app.models import User
 from app import app, db
-from app.forms import LoginForm, RegistrationForm, EditProfileForm
+from app.forms import LoginForm, RegistrationForm, EditProfileForm, PostForm
 
 @app.before_request
 def before_request():
@@ -17,6 +17,13 @@ def before_request():
 @app.route('/index')
 @login_required
 def index():
+    form = PostForm()
+    if form.validate_on_submit():
+        post = Post(body=form.post.data, author=current_user)
+        db.session.add(post)
+        db.session.commit()
+        flash('Your post is now live!')
+        return redirect(url_for('index'))
     posts = [
         {
             'author': {'username': 'Jonas'},
@@ -28,7 +35,7 @@ def index():
         }
     ]
     return render_template(
-        'index.html', title='home', posts=posts
+        'index.html', title='home', form=form, posts=posts
         )
 
 @app.route('/register', methods=['GET', 'POST'])

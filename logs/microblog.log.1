@@ -1,0 +1,93 @@
+2019-01-01 11:03:44,843 INFO: Microblog Startup [in /Users/jonaserthal/Developer/web_dev/microblog/app/__init__.py:44
+2019-01-01 12:10:34,913 INFO: Microblog Startup [in /Users/jonaserthal/Developer/web_dev/microblog/app/__init__.py:44
+2019-01-01 13:26:01,199 INFO: Microblog Startup [in /Users/jonaserthal/Developer/web_dev/microblog/app/__init__.py:44
+2019-01-01 13:26:26,447 INFO: Microblog Startup [in /Users/jonaserthal/Developer/web_dev/microblog/app/__init__.py:44
+2019-01-01 17:48:34,141 INFO: Microblog Startup [in /Users/jonaserthal/Developer/web_dev/microblog/app/__init__.py:44
+2019-01-01 17:49:06,187 INFO: Microblog Startup [in /Users/jonaserthal/Developer/web_dev/microblog/app/__init__.py:44
+2019-01-01 17:50:20,994 INFO: Microblog Startup [in /Users/jonaserthal/Developer/web_dev/microblog/app/__init__.py:44
+2019-01-01 17:50:57,675 INFO: Microblog Startup [in /Users/jonaserthal/Developer/web_dev/microblog/app/__init__.py:44
+2019-01-01 17:53:53,600 INFO: Microblog Startup [in /Users/jonaserthal/Developer/web_dev/microblog/app/__init__.py:44
+2019-01-01 17:56:19,586 INFO: Microblog Startup [in /Users/jonaserthal/Developer/web_dev/microblog/app/__init__.py:44
+2019-01-01 18:03:28,134 INFO: Microblog Startup [in /Users/jonaserthal/Developer/web_dev/microblog/app/__init__.py:44
+2019-01-01 18:07:54,058 INFO: Microblog Startup [in /Users/jonaserthal/Developer/web_dev/microblog/app/__init__.py:44
+2019-01-02 07:25:55,364 INFO: Microblog Startup [in /Users/jonaserthal/Developer/web_dev/microblog/app/__init__.py:44
+2019-01-04 17:14:24,707 INFO: Microblog Startup [in /Users/jonaserthal/Developer/web_dev/microblog/app/__init__.py:44
+2019-01-04 17:15:34,935 ERROR: Exception on / [GET] [in /Users/jonaserthal/Developer/web_dev/microblog/venv/lib/python3.7/site-packages/flask/app.py:1761
+Traceback (most recent call last):
+  File "/Users/jonaserthal/Developer/web_dev/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/jonaserthal/Developer/web_dev/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/jonaserthal/Developer/web_dev/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/jonaserthal/Developer/web_dev/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/jonaserthal/Developer/web_dev/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jonaserthal/Developer/web_dev/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jonaserthal/Developer/web_dev/microblog/venv/lib/python3.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/jonaserthal/Developer/web_dev/microblog/app/routes.py", line 31, in index
+    'index.html', title='home', posts=posts
+  File "/Users/jonaserthal/Developer/web_dev/microblog/venv/lib/python3.7/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/Users/jonaserthal/Developer/web_dev/microblog/venv/lib/python3.7/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/Users/jonaserthal/Developer/web_dev/microblog/venv/lib/python3.7/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/Users/jonaserthal/Developer/web_dev/microblog/venv/lib/python3.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/jonaserthal/Developer/web_dev/microblog/venv/lib/python3.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/jonaserthal/Developer/web_dev/microblog/venv/lib/python3.7/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/jonaserthal/Developer/web_dev/microblog/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/jonaserthal/Developer/web_dev/microblog/app/templates/base.html", line 30, in top-level template code
+    {% block content %}{% endblock %}
+  File "/Users/jonaserthal/Developer/web_dev/microblog/app/templates/index.html", line 6, in block "content"
+    {{ form.hidden_tag() }}
+  File "/Users/jonaserthal/Developer/web_dev/microblog/venv/lib/python3.7/site-packages/jinja2/environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2019-01-04 17:17:03,147 INFO: Microblog Startup [in /Users/jonaserthal/Developer/web_dev/microblog/app/__init__.py:44
+2019-01-04 17:17:05,001 ERROR: Exception on / [GET] [in /Users/jonaserthal/Developer/web_dev/microblog/venv/lib/python3.7/site-packages/flask/app.py:1761
+Traceback (most recent call last):
+  File "/Users/jonaserthal/Developer/web_dev/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/jonaserthal/Developer/web_dev/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/jonaserthal/Developer/web_dev/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/jonaserthal/Developer/web_dev/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/jonaserthal/Developer/web_dev/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jonaserthal/Developer/web_dev/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jonaserthal/Developer/web_dev/microblog/venv/lib/python3.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/jonaserthal/Developer/web_dev/microblog/app/routes.py", line 31, in index
+    'index.html', title='home', posts=posts
+  File "/Users/jonaserthal/Developer/web_dev/microblog/venv/lib/python3.7/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/Users/jonaserthal/Developer/web_dev/microblog/venv/lib/python3.7/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/Users/jonaserthal/Developer/web_dev/microblog/venv/lib/python3.7/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/Users/jonaserthal/Developer/web_dev/microblog/venv/lib/python3.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/jonaserthal/Developer/web_dev/microblog/venv/lib/python3.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/jonaserthal/Developer/web_dev/microblog/venv/lib/python3.7/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/jonaserthal/Developer/web_dev/microblog/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/jonaserthal/Developer/web_dev/microblog/app/templates/base.html", line 30, in top-level template code
+    {% block content %}{% endblock %}
+  File "/Users/jonaserthal/Developer/web_dev/microblog/app/templates/index.html", line 6, in block "content"
+    {{ form.hidden_tag() }}
+  File "/Users/jonaserthal/Developer/web_dev/microblog/venv/lib/python3.7/site-packages/jinja2/environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
